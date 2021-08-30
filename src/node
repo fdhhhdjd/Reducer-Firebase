@@ -1,0 +1,8 @@
+1/on():Sự kiện này sẽ kích hoạt một lần với dữ liệu ban đầu được lưu trữ 
+tại vị trí này và sau đó kích hoạt lại mỗi khi dữ liệu thay đổi. 
+DataSnapshot được chuyển đến lệnh gọi lại sẽ dành cho vị trí mà tại đó () được gọi.
+ Nó sẽ không kích hoạt cho đến khi toàn bộ nội dung đã được đồng bộ hóa. Nếu vị trí không có dữ liệu, 
+ nó sẽ được kích hoạt với một DataSnapshot trống (val () sẽ trả về null).
+ child():Nhận Tham chiếu cho vị trí tại đường dẫn tương đối được chỉ định.
+ keys():Trả về tên của các thuộc tính chuỗi có thể liệt kê và phương thức của một đối tượng
+Cài đặt :npm lodash đề có mấy cái lệnh dễ sài
