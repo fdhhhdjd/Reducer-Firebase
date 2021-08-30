@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext } from "react";
-import firebaseDb from "../firebase";
+import { firebaseDb } from "../firebase";
 import { Link, useParams } from "react-router-dom";
 import { isEmpty } from "lodash";
 const ListRecord = () => {

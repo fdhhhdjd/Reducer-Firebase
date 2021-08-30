@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import firebaseDb from "../firebase";
+import { firebaseDb } from "../firebase";
 import { useParams, useHistory } from "react-router-dom";
 import { isEmpty } from "lodash";
-
 const AddEdit = () => {
   const values = {
     fullName: "",
@@ -21,7 +20,7 @@ const AddEdit = () => {
       [name]: value,
     });
   };
-  const handleSubmit = (e, obj) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     if (isEmpty(id)) {
       firebaseDb.child("information customer").push(initialState, (err) => {
