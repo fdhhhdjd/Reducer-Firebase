@@ -36,11 +36,11 @@ const ListRecord = () => {
             <table className="table table-bordered table-striped">
               <thead className="thead-dark">
                 <tr>
-                  <th scope="col">No.</th>
-                  <th scope="col">Name</th>
-                  <th scope="col">Mobile</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">Address</th>
+                  <th scope="col">No. 🛑</th>
+                  <th scope="col">Name 💭</th>
+                  <th scope="col">Mobile 📲</th>
+                  <th scope="col">Email 📧</th>
+                  <th scope="col">Address 📗</th>
                   <th scope="col">Action</th>
                 </tr>
               </thead>

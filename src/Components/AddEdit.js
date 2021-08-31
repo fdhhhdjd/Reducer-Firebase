@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { firebaseDb } from "../firebase";
-import { useParams, useHistory } from "react-router-dom";
+import { useParams, useHistory, Link } from "react-router-dom";
 import { isEmpty } from "lodash";
 const AddEdit = () => {
   const values = {
@@ -69,7 +69,7 @@ const AddEdit = () => {
         <div className="col-md-6">
           <form onSubmit={handleSubmit}>
             <div className="form-group">
-              <label className="bmd-label-floating">Name</label>
+              <label className="bmd-label-floating">Name 💭</label>
               <input
                 type="text"
                 className="form-control"
@@ -79,7 +79,7 @@ const AddEdit = () => {
               />
             </div>
             <div className="form-group">
-              <label className="bmd-label-floating">Mobile</label>
+              <label className="bmd-label-floating">Mobile 📲</label>
               <input
                 type="number"
                 className="form-control"
@@ -89,7 +89,7 @@ const AddEdit = () => {
               />
             </div>
             <div className="form-group">
-              <label className="bmd-label-floating">Email</label>
+              <label className="bmd-label-floating">Email 📧</label>
               <input
                 type="email"
                 className="form-control"
@@ -99,7 +99,7 @@ const AddEdit = () => {
               />
             </div>
             <div className="form-group">
-              <label className="bmd-label-floating">Address</label>
+              <label className="bmd-label-floating">Address 📗</label>
               <input
                 type="text"
                 className="form-control"
@@ -108,9 +108,11 @@ const AddEdit = () => {
                 onChange={handleInputChange}
               />
             </div>
-            <button className="btn btn-default">Cancel</button>
+            <Link to="/" className="btn btn-danger btn-raised mr-2">
+              Cancel 🔙
+            </Link>
             <button type="submit" className="btn btn-success btn-raised">
-              Submit
+              Submit 📎
             </button>
           </form>
         </div>

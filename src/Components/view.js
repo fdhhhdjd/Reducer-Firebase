@@ -21,15 +21,15 @@ const View = () => {
       {Object.keys(data).map((userId) => {
         if (userId === id) {
           return (
-            <div class="card">
-              <div class="card-header lead">User Detail</div>
-              <div class="card-body">
-                <p class="card-text">Name: {data[id].fullName}</p>
-                <p class="card-text">Mobile: {data[id].mobile}</p>
-                <p class="card-text">Email: {data[id].email}</p>
-                <p class="card-text">Address: {data[id].address}</p>
+            <div className="card" key={id}>
+              <div className="card-header lead">User Detail 🕵️ </div>
+              <div className="card-body">
+                <p className="card-text">Name: {data[id].fullName}</p>
+                <p className="card-text">Mobile: {data[id].mobile}</p>
+                <p className="card-text">Email: {data[id].email}</p>
+                <p className="card-text">Address: {data[id].address}</p>
                 <Link to="/">
-                  <a className="btn btn-info">Go Back</a>
+                  <p className="btn btn-info">Go Back</p>
                 </Link>
               </div>
             </div>

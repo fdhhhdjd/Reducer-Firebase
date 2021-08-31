@@ -6,3 +6,7 @@ DataSnapshot được chuyển đến lệnh gọi lại sẽ dành cho vị tr�
  child():Nhận Tham chiếu cho vị trí tại đường dẫn tương đối được chỉ định.
  keys():Trả về tên của các thuộc tính chuỗi có thể liệt kê và phương thức của một đối tượng
 Cài đặt :npm lodash đề có mấy cái lệnh dễ sài
+includes():duyet qua xem no co dung khong neu dung se lam gi do
+rel():Một đường dẫn tương đối để khởi tạo tham chiếu, ví dụ: path / to / image.jpg. 
+Nếu không được thông qua, tham chiếu được trả về trỏ đến gốc thùng.
+put():Tải dữ liệu lên vị trí của tài liệu tham khảo này.
