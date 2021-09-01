@@ -3,10 +3,12 @@ tại vị trí này và sau đó kích hoạt lại mỗi khi dữ liệu thay 
 DataSnapshot được chuyển đến lệnh gọi lại sẽ dành cho vị trí mà tại đó () được gọi.
  Nó sẽ không kích hoạt cho đến khi toàn bộ nội dung đã được đồng bộ hóa. Nếu vị trí không có dữ liệu, 
  nó sẽ được kích hoạt với một DataSnapshot trống (val () sẽ trả về null).
- child():Nhận Tham chiếu cho vị trí tại đường dẫn tương đối được chỉ định.
+child():Nhận Tham chiếu cho vị trí tại đường dẫn tương đối được chỉ định.
  keys():Trả về tên của các thuộc tính chuỗi có thể liệt kê và phương thức của một đối tượng
 Cài đặt :npm lodash đề có mấy cái lệnh dễ sài
 includes():duyet qua xem no co dung khong neu dung se lam gi do
 rel():Một đường dẫn tương đối để khởi tạo tham chiếu, ví dụ: path / to / image.jpg. 
 Nếu không được thông qua, tham chiếu được trả về trỏ đến gốc thùng.
 put():Tải dữ liệu lên vị trí của tài liệu tham khảo này.
+doc():Nhận DocumentReference cho tài liệu trong bộ sưu tập theo đường dẫn được chỉ định. Nếu không có đường dẫn nào được chỉ định, 
+một ID duy nhất được tạo tự động sẽ được sử dụng cho DocumentReference được trả về.

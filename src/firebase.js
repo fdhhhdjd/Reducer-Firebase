@@ -12,9 +12,17 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+const firebaseGet = firebase.initializeApp(firebaseConfig);
 const firebaseDb = firebase.database().ref();
 const projectStorage = firebase.storage(); //luu len fire base
+const fireAuth = firebase.auth();
 const projectFirestore = firebase.firestore();
 const timestamp = firebase.firestore.FieldValue.serverTimestamp;
-export { projectStorage, projectFirestore, timestamp, firebaseDb };
+export {
+  projectStorage,
+  projectFirestore,
+  timestamp,
+  firebaseDb,
+  firebaseGet,
+  fireAuth,
+};

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { firebaseDb } from "../firebase";
 import { useParams, useHistory, Link } from "react-router-dom";
 import { isEmpty } from "lodash";
@@ -64,7 +64,7 @@ const AddEdit = () => {
     }
   }, [id, data]);
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 pt-5">
       <div className="row">
         <div className="col-md-6">
           <form onSubmit={handleSubmit}>

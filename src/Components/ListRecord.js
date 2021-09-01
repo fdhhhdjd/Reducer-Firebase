@@ -2,6 +2,7 @@ import React, { useEffect, useState, useContext } from "react";
 import { firebaseDb } from "../firebase";
 import { Link, useParams } from "react-router-dom";
 import { isEmpty } from "lodash";
+import { ThemeContext } from "../useContext/ToggleTheme";
 const ListRecord = () => {
   const [data, setData] = useState({});
   useEffect(() => {
@@ -24,7 +25,9 @@ const ListRecord = () => {
       });
     }
   };
-
+  const { theme } = useContext(ThemeContext);
+  const { light, dark, common, isFlag } = theme;
+  const themeStyle = { ...(isFlag ? dark : light), ...common };
   return (
     <>
       <div className="container-fluid mt-5">
@@ -33,7 +36,10 @@ const ListRecord = () => {
             <div className="jumbotron">
               <h1 className="display-2">Information customer 🛂</h1>
             </div>
-            <table className="table table-bordered table-striped">
+            <table
+              className="table table-bordered table-striped"
+              style={themeStyle}
+            >
               <thead className="thead-dark">
                 <tr>
                   <th scope="col">No. 🛑</th>

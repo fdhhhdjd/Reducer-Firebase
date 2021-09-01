@@ -17,7 +17,7 @@ const View = () => {
     });
   }, [id]);
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 pt-5 ">
       {Object.keys(data).map((userId) => {
         if (userId === id) {
           return (

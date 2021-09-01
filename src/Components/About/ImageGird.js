@@ -1,6 +1,7 @@
 import React from "react";
 import UseFilestore from "./UseFilestore";
 import { motion } from "framer-motion";
+import { projectStorage, projectFirestore, timestamp } from "../../firebase";
 const ImageGird = ({ setSelectedImg }) => {
   const { docs } = UseFilestore("images");
 
